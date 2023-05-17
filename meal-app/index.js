@@ -1,4 +1,4 @@
-const form = document.getElementById("form");
+const form = document.getElementById("form"); 
 const input = document.querySelector("input");
 let meals = [];
 
@@ -31,14 +31,14 @@ function displayMeals() {
           }
         }
         console.log(ingredients);
-
+        
         return `
           <li class=card>
           <h2> ${meal.strMeal} </h2>
           <p>${meal.strArea}</p>
           <img src="${meal.strMealThumb}" alt="photo ${meal.strMeal}">
           <ul>
-          ${ingredients.join("")}
+          ${ingredients.join("")} <br>  ${meal.strInstructions}
           </ul>
          
           </li>
